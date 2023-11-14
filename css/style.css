@@ -45,17 +45,21 @@ header{
     background-color: rgba(229,229,229,255);
 }
 
-.form-control::placeholder {
+.form-control::placeholder{
     color: rgba(123,123,123,260);
     opacity: 1;
     font-size: 0.8rem;
-  }
+}
 
-  .content-header i{
+.content-header i{
     width: 100%;
     display: flex;
     justify-content: space-around;
-  }
+}
+
+.button{
+    border: none;
+}
 
 /* MAIN */
 
@@ -106,7 +110,7 @@ main{
 .menu h2{
     font-size: 1rem;
     color: white;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .menu-loghi i{
@@ -127,6 +131,16 @@ main{
 
 .bottom-side-bar i{
     margin-right: 15px;
+}
+
+.menu h2:hover{
+    background-color: rgb(122, 122, 122);
+    padding: 10px 10px;
+}
+
+.bottom-side-bar h2:hover{
+    background-color: rgb(122, 122, 122);
+    padding: 10px 10px;
 }
 
 /* main-content */
