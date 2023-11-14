@@ -9,3 +9,76 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+/* HEADER */
+
+header{
+    background-color: blue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.content-header{
+    background-color: red;
+    height: 35px;
+}
+
+/* MAIN */
+
+main{
+    height: calc(100vh - 60px);
+    background-color: rgb(15, 255, 15);
+    display: flex;
+}
+
+.general-content{
+    display: flex;
+    background-color: rgb(235, 235, 10);
+    height: 100%;
+}
+
+/* side-bar */
+
+.side-bar{
+    width: 150px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-side-bar{
+    height: 300px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.bottom-side-bar{
+    height: 75px;
+    width: 100%;
+    background-color: aqua;
+}
+
+/* main-content */
+
+.main-content{
+    width: calc(100vw - 150px);
+    background-color: red;
+}
+
+/* top-content */
+
+.top-content{
+    height: 120px;
+    background-color: lightblue;
+}
+
+/* bottom.content */
+
+.bottom-content{
+    height: calc(100vh - 180px);
+    background-color: burlywood;
+}
+
+
