@@ -23,6 +23,7 @@ header{
     height: 35px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .content-header img{
