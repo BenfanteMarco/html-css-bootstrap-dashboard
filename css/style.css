@@ -13,16 +13,49 @@ body{
 /* HEADER */
 
 header{
-    background-color: blue;
+    background-color: rgba(255,255,255,255);
     height: 60px;
     display: flex;
     align-items: center;
 }
 
 .content-header{
-    background-color: red;
     height: 35px;
+    display: flex;
+    align-items: center;
 }
+
+.content-header img{
+    width: 75%;
+}
+
+.content-header img:last-child{
+    width: 35%;
+}
+
+.logo{
+    display: none;
+}
+
+.input-group-text{
+    background-color: rgba(229,229,229,255);
+}
+
+.form-control{
+    background-color: rgba(229,229,229,255);
+}
+
+.form-control::placeholder {
+    color: rgba(123,123,123,260);
+    opacity: 1;
+    font-size: 0.8rem;
+  }
+
+  .content-header i{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 
 /* MAIN */
 
@@ -90,5 +123,27 @@ main{
 
     .main-content{
         width: calc(100vw - 80px);
+    }
+
+    .logo-text{
+        display: none;
+    }
+
+    .content-header img:last-child{
+        width: 60%;
+    }
+
+    .logo{
+        display: block;
+    }
+
+    .content-header i{
+        display: none;
+    }
+
+    .content-header i:last-child{
+        display: block;
+        display: flex;
+        justify-content: center;
     }
 }
