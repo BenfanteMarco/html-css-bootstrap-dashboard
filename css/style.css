@@ -61,13 +61,11 @@ header{
 
 main{
     height: calc(100vh - 60px);
-    background-color: rgb(15, 255, 15);
     display: flex;
 }
 
 .general-content{
     display: flex;
-    background-color: rgb(235, 235, 10);
     height: 100%;
 }
 
@@ -75,22 +73,60 @@ main{
 
 .side-bar{
     width: 150px;
-    background-color: grey;
+    background-color: rgba(5,30,52,255);
+    background-image: url(../img/sidebar-bg.png);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .top-side-bar{
-    height: 300px;
     width: 100%;
-    background-color: aqua;
 }
 
 .bottom-side-bar{
-    height: 75px;
     width: 100%;
-    background-color: aqua;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu{
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu i{
+    margin-right: 15px;
+}
+
+.menu h2{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.menu-loghi i{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.menu-loghi{
+    display: none;
+}
+
+.bottom-side-bar h2{
+    font-size: 1rem;
+    color: white;
+}
+
+.bottom-side-bar i{
+    margin-right: 15px;
 }
 
 /* main-content */
@@ -116,7 +152,7 @@ main{
 
 /* MEDIA-QUERY */
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
     .side-bar{
         width: 80px;
     }
@@ -145,5 +181,49 @@ main{
         display: block;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .side-bar{
+        width: 80px;
+    }
+
+    .main-content{
+        width: calc(100vw - 80px);
+    }
+
+    .logo-text{
+        display: none;
+    }
+
+    .content-header img:last-child{
+        width: 60%;
+    }
+
+    .logo{
+        display: block;
+    }
+
+    .content-header i{
+        display: none;
+    }
+
+    .content-header i:last-child{
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu h2{
+        display: none;
+    }
+
+    .bottom-side-bar h2{
+        display: none;
+    }
+
+    .menu-loghi{
+        display: block;
     }
 }
