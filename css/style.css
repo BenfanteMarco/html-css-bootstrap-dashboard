@@ -27,11 +27,7 @@ header{
 }
 
 .content-header img{
-    width: 75%;
-}
-
-.content-header img:last-child{
-    width: 35%;
+    width: 150px;
 }
 
 .logo{
@@ -189,6 +185,10 @@ main{
     border: 1px solid white;
 }
 
+.off-button:hover{
+    background-color: rgba(9, 25, 255, 0.554);
+}
+
 #offcanvasRight{
     width: 50%;
 }
@@ -277,7 +277,14 @@ main{
 
 .line{
     border: 1px solid rgba(231,231,231,255);
-    margin: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 5px 0px;
+}
+
+.line-2{
+    border: 1px solid rgba(231,231,231,255);
+    margin: 0px;
     border-radius: 5px;
     padding: 5px 0px;
 }
@@ -290,11 +297,44 @@ main{
     color: rgb(100, 100, 100);
 }
 
+.form-check-2{
+    font-size: 0.8rem;
+    border-bottom: 1px solid rgba(231,231,231,255);
+    margin-top: 10px;
+    color: rgb(100, 100, 100);
+    margin: 0px 10px;
+    margin-bottom: 10px;
+}
+
+.form-check-2 img{
+    width: 100%;
+}
+
+.form-check-2 h3{
+    font-size: 1rem;
+    color: black;
+}
+
+.form-check-2 h5{
+    font-size: 0.7rem;
+    color: black;
+}
+
 .last{
     font-size: 0.8rem;
     border: none;
     margin-top: 10px;
     padding-left: 30px;
+}
+
+.last-2{
+    font-size: 0.8rem;
+    border: none;
+    margin-top: 10px;
+}
+
+table th:nth-child(1){
+    width: 50%;
 }
 
 /* MEDIA-QUERY */
@@ -353,7 +393,7 @@ main{
     }
 
     .content-header img:last-child{
-        width: 60%;
+        width: 60px;
     }
 
     .logo{
