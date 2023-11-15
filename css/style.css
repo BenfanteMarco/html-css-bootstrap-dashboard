@@ -148,7 +148,6 @@ main{
 
 .main-content{
     width: calc(100vw - 150px);
-    background-color: red;
     overflow: auto;
 }
 
@@ -157,6 +156,9 @@ main{
 .top-content{
     height: 120px;
     background-color: rgba(27,114,232,255);
+    position: fixed;
+    z-index: 1;
+    width: calc(100% - 150px);
 }
 
 .top-content-content{
@@ -172,13 +174,17 @@ main{
 }
 
 .top-content-content .arrow{
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .badge{
-    margin-right: 10px;
+    margin-right: 5px;
     background-color: rgba(22,91,186,255);
     border-radius: 15px;
+}
+
+.badge-on{
+    display: none;
 }
 
 .off-button{
@@ -211,7 +217,66 @@ main{
 
 .bottom-content{
     height: calc(100vh - 180px);
-    background-color: burlywood;
+    margin-top: 120px;
+}
+
+.card .card-header{
+    font-size: 1.4rem;
+}
+
+.card tr{
+    font-size: 0.8rem;
+}
+
+.card tr th{
+    color: rgb(100, 100, 100);
+}
+
+.card tr td{
+    color: rgb(100, 100, 100);
+}
+
+.done{
+    background-color: rgba(25,135,84,255);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.process{
+    background-color: rgba(255,193,7,255);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.failed{
+    background-color: rgba(220,53,69,255);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.pencil{
+    margin-right: 5px;
+    border: 1px solid rgba(108,117,125,255);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.trash{
+    border: 1px solid rgba(108,117,125,255);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.accordion-item h2 button{
+    font-size: 0.8rem;
+}
+
+.accordion-item{
+    border: none;
+    border-bottom: 1px solid rgb(216, 216, 216);
 }
 
 /* MEDIA-QUERY */
@@ -222,7 +287,7 @@ main{
     }
 
     .main-content{
-        width: calc(100vw - 80px);
+        width: calc(100% - 80px);
     }
 
     .logo-text{
@@ -249,6 +314,7 @@ main{
 
     .top-content{
         height: 250px;
+        width: calc(100vw - 80px);
     }
 
     .bottom-content{
@@ -259,6 +325,10 @@ main{
 @media screen and (max-width: 992px){
     .side-bar{
         width: 80px;
+    }
+
+    .top-content{
+        width: calc(100% - 80px);
     }
 
     .main-content{
