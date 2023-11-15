@@ -38,15 +38,15 @@ header{
     display: none;
 }
 
-.input-group-text{
+header .input-group-text{
     background-color: rgba(229,229,229,255);
 }
 
-.form-control{
+header .form-control{
     background-color: rgba(229,229,229,255);
 }
 
-.form-control::placeholder{
+header .form-control::placeholder{
     color: rgba(123,123,123,260);
     opacity: 1;
     font-size: 0.8rem;
@@ -149,13 +149,62 @@ main{
 .main-content{
     width: calc(100vw - 150px);
     background-color: red;
+    overflow: auto;
 }
 
 /* top-content */
 
 .top-content{
     height: 120px;
-    background-color: lightblue;
+    background-color: rgba(27,114,232,255);
+}
+
+.top-content-content{
+    margin-top: 20px;
+}
+
+.top-content-content .text{
+    font-size: 1.7rem;
+}
+
+.top-content-content .text-2{
+    font-size: 1.7rem;
+}
+
+.top-content-content .arrow{
+    padding-right: 10px;
+}
+
+.badge{
+    margin-right: 10px;
+    background-color: rgba(22,91,186,255);
+    border-radius: 15px;
+}
+
+.off-button{
+    margin-left: 20px;
+    border: 1px solid white;
+}
+
+#offcanvasRight{
+    width: 50%;
+}
+
+.scegli button{
+    border: 1px solid rgb(216, 216, 216);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.s-button button:first-child{
+    background-color: rgba(13,110,253,255);
+    color: white;
+}
+
+.s-button button:last-child{
+    background-color: rgba(255,193,7,255);
 }
 
 /* bottom.content */
@@ -196,6 +245,14 @@ main{
         display: block;
         display: flex;
         justify-content: center;
+    }
+
+    .top-content{
+        height: 250px;
+    }
+
+    .bottom-content{
+        height: calc(100vh - 310px);
     }
 }
 
@@ -241,4 +298,13 @@ main{
     .menu-loghi{
         display: block;
     }
+
+    .badge-off{
+        display: none;
+    }
+
+    #offcanvasRight{
+        width: 100%;
+    }
+
 }
