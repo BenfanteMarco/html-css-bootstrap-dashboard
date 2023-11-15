@@ -156,9 +156,6 @@ main{
 .top-content{
     height: 120px;
     background-color: rgba(27,114,232,255);
-    position: fixed;
-    z-index: 1;
-    width: calc(100% - 150px);
 }
 
 .top-content-content{
@@ -217,7 +214,6 @@ main{
 
 .bottom-content{
     height: calc(100vh - 180px);
-    margin-top: 120px;
 }
 
 .card .card-header{
@@ -314,7 +310,6 @@ main{
 
     .top-content{
         height: 250px;
-        width: calc(100vw - 80px);
     }
 
     .bottom-content{
@@ -325,10 +320,6 @@ main{
 @media screen and (max-width: 992px){
     .side-bar{
         width: 80px;
-    }
-
-    .top-content{
-        width: calc(100% - 80px);
     }
 
     .main-content{
